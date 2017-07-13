@@ -10,6 +10,9 @@ public class DriverMap {
 	 * between the Map interface and HashMap implementation
 	 * My name is Ashwin Boini
 	 * Add comments
+	 * Comment 1
+	 * Comment 2
+	 * Comment 3
 	 */
 	public static void main(String[] args) {
 
