@@ -1,0 +1,8 @@
+com\fanniemae\payroll\dao\EmployeeRepository.class
+com\fanniemae\payroll\UnionEmployee.class
+com\fanniemae\payroll\dao\ShoppingRepository.class
+com\fanniemae\payroll\model\EmployeeType.class
+com\fanniemae\payroll\Employee.class
+com\fanniemae\payroll\dao\SalesTaxRepository.class
+com\fanniemae\payroll\ManagementEmployee.class
+com\fanniemae\payroll\dao\IQuery.class
