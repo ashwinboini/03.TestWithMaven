@@ -16,7 +16,7 @@ public abstract class AbstractSQLDAO {
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		ds.setUsername("root");
 		ds.setPassword("hexaware");
-		ds.setUrl("jdbc:mysql://localhost:3306/world");
+		ds.setUrl("jdbc:mysql://localhost:3306/world?useSSL=false");
 
 		Connection con = null;
 		Statement stmt = null;

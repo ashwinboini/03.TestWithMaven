@@ -30,5 +30,18 @@ public class CityRepository extends AbstractSQLDAO
 		return list;
 	}
 
+	@Override
+	public City findByKey(String key) {
+
+		String sql = "select ID, Name, Population from city where id = " + key;
+		System.out.println(sql);
+		super.process(sql);
+		
+		City city = list.get(0);
+		return city;
+		
+	//	return IQuery.super.findByKey(key);
+	}
+
 	
 	}

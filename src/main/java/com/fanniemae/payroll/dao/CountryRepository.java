@@ -3,6 +3,8 @@ package com.fanniemae.payroll.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import com.fanniemae.payroll.model.City;
 import com.fanniemae.payroll.model.Country;
 
 public class CountryRepository extends AbstractSQLDAO
@@ -27,6 +29,20 @@ public class CountryRepository extends AbstractSQLDAO
 		String sql = "select Code, Name, Population " + "from Country";
 		super.process(sql);
 		return list;
+	}
+
+	@Override
+	public Country findByKey(String key) {
+		
+		String sql = "Select Code, Name, Population from Country where Code =" + "'" + key + "'";
+		
+		System.out.println(sql);
+		super.process(sql);
+		
+		Country country = list.get(0);
+		return country;
+		
+		//return IQuery.super.findByKey(key);
 	}
 
 	

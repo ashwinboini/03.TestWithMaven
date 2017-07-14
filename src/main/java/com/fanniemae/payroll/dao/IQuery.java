@@ -10,5 +10,12 @@ public interface IQuery <T>	{
 		default public Map<String,Double> findMaps()
 		{
 			return null;
+
+		}
+		
+		default public T findByKey(String key)
+		{
+			return null;
 		}
 }
+
